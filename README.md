@@ -14,26 +14,26 @@ Using the np.linalg.solve(), we can find the solutions.
 ### Step 4: 
 End the program
 ## Program:
-    # Program to find the solution for the given linear equations.
-    # Developed by: Harish M
-    # RegisterNumber: 24006510
+        # Program to find the solution for the given linear equations.
+        # Developed by: Harish M
+        # RegisterNumber: 24006510
 
-    import numpy as np
+        import numpy as np
 
-    # Coefficient matrix for the system x - 3y = 0, 3x + y = 10
-    A = np.array([[1, -3], 
-                [3, 1]])
+        # Coefficient matrix for the system x - 3y = 0, 3x + y = 10
+        A = np.array([[1, -3], 
+                    [3, 1]])
 
-    # Constant terms
-    B = np.array([0, 10])
+        # Constant terms
+        B = np.array([0, 10])
 
-    # Solve the system of equations
-    try:
-        solution = np.linalg.solve(A, B)
-        # Display the solution
-        print(f"{solution}")
-    except np.linalg.LinAlgError:
-        print("The system of equations does not have a unique solution.")
+        # Solve the system of equations
+        try:
+            solution = np.linalg.solve(A, B)
+            # Display the solution
+            print(f"{solution}")
+        except np.linalg.LinAlgError:
+            print("The system of equations does not have a unique solution.")
 
 ## Output:
 ![Result](<Screenshot 2024-12-10 202858.png>)
